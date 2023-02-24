@@ -27,7 +27,7 @@ function SignUp(){
     return(
         <div className="Auth">
         <div className="p-4 box">
-        <img src={logo} alt="WUNDERLIST 2.0"/>
+      <Link to="/"><img src={logo} alt="WUNDERLIST 2.0"/></Link>  
              <h2 className="text-center mb-4">Sign up</h2>
     
              

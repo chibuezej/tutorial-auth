@@ -1,8 +1,8 @@
-/* body {
+body {
  
   font-family: 'Dosis', sans-serif;
-  
-} */
+  box-sizing: border-box;
+}
 .Auth{
   background-color: #fafafa;
   display: flex;

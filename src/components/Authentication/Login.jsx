@@ -8,7 +8,7 @@ function Login(){
     return(
         <div className="Auth">
         <div className="p-4 box">
-        <img src={logo} alt="WUNDERLIST 2.0"/>
+        <Link to="/"><img src={logo} alt="WUNDERLIST 2.0"/></Link>
             <h2>LOGIN</h2>
             <Form>
             <Form.Group className="mb-3" controlId="formBasicEmail">
