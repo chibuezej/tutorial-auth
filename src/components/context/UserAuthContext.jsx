@@ -22,7 +22,7 @@ const unsubscribe = onAuthStateChanged(auth, (currentuser) => {
         }
     },[])
 
-    return <userAuthContext.Provider value={{user, signUp}}>{children}</userAuthContext.Provider>
+    return <userAuthContext.Provider value={{user, signUp, login}}>{children}</userAuthContext.Provider>
 }
 
 export function useUserAuth(){

@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { Form, Button, Alert, Card} from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useUserAuth } from "../context/UserAuthContext";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from "../../assets/WUNDERLIST LOGO.png"
@@ -11,13 +11,15 @@ function SignUp(){
     const [email, setEmail] = useState('')
    const [password, setPassword] = useState('')
    const [error, setError] = useState("")
-  
+  const navigate = useNavigate()
     const {signUp} = useUserAuth()
+
     async function handleSubmit(e){
     e.preventDefault();
     setError("")
     try{
         await signUp(email, password)
+        navigate("/home")
     } catch (err) {
         setError(err.message)
         console.log(err.message)
