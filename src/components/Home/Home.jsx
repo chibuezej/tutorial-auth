@@ -20,7 +20,7 @@ function Home (){
                     <h3>Learn to manage<span> your time</span> </h3> 
                     <p>No matter how much is on your plate, Wunderlist 2.0 makes it super easy to remember all the little recurring to-dos and suprise to-dos that pop up unexpectedly </p>
                    <div className="btn">
-                   <Link to="/signup">
+                   <Link to="/users/signup">
                     <button className="start-btn" type="button">Get started</button>
                    </Link>
                    <Link to="/">
@@ -28,12 +28,7 @@ function Home (){
                    </Link>
                    </div>
                   
-                   <div className="social-icons">
-                     <img src={twitter} alt='twitter' />
-                     <img src={insta} alt="instagram"/>
-                     <img src={github} alt="github"/>
-                     <img src={linkdln} alt="linkdln"/>
-                   </div>
+        
                 </div>
 
                 <div className="right-column">

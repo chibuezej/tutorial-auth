@@ -36,14 +36,22 @@ function SignUp(){
              {error && <Alert variant="danger">{error}</Alert>}
              
                 <Form onSubmit={handleSubmit}>
-           
-                    <Form.Group id="email" controlId="formBasicEmail">
-                    <Form.Control type="email" placeholder="email address" onChange={(e) => setEmail(e.target.value)}/>
+                        <Form.Group id="firstName" controlId="formBasicFirstName" className="mb-2">
+                        <Form.Label>First Name</Form.Label> 
+                            <Form.Control type="firstName" placeholder="Firstname"  name="first_name"></Form.Control>
+                        </Form.Group>
+                        <Form.Group id="lastName" controlId="formBasicLastName" className="mb-2">
+                        <Form.Label>Last Name</Form.Label> 
+                            <Form.Control type="lastName" placeholder="Lastname"  name="last_name"></Form.Control>
+                        </Form.Group>
+                    <Form.Group id="email" controlId="formBasicEmail" className="mb-2">
+                    <Form.Label>Email</Form.Label> 
+                    <Form.Control type="email" placeholder="email address" name="email" onChange={(e) => setEmail(e.target.value)}/>
                     </Form.Group>
 
-                    <Form.Group id="password" controlId="formBasicPassword">
+                    <Form.Group id="password" controlId="formBasicPassword" className="mb-4" >
                     <Form.Label>Password</Form.Label> 
-                    <Form.Control type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)}/>
+                    <Form.Control type="password" placeholder="Password" name="password" onChange={(e) => setPassword(e.target.value)}/>
                     </Form.Group>
 
                   <Button className="w-100" type="submit">Sign up</Button>

@@ -4,7 +4,7 @@ import { useUserAuth } from "../context/UserAuthContext";
 function Protected ({children}){
   let {user} = useUserAuth();
    if(!user){
-    return <Navigate to="/home" />
+    return <Navigate to="/" />
    }
     return children 
    

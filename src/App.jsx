@@ -25,8 +25,8 @@ function App() {
         <HomeLogin />
       </Protected>}/>
         <Route path='/' element={<Home />}/>
-      <Route path="/login" element={<Login />}/>
-    <Route path="/signup" element={<SignUp />}/>
+      <Route path="/users/login" element={<Login />}/>
+    <Route path="/users/signup" element={<SignUp />}/>
     <Route path='/about' element={<About />}/>
     </Routes>
     </UserAuthContextProvider>
